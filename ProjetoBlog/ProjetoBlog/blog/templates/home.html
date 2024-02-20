@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+{%for post in posts %} 
+<div class="card">  
+    <p>{{ post.titulo }}</p>
+    <small>Publicado em: {{post.publicado_em}}</small>
+    <p>
+        <small><strong>Autor: {{post.autor}}</strong></small>
+    </p>
+    <p><strong>{{post.resumo}}</strong></p>
+    <img width="390" height="215" src={{post.img_url}}>
+    <br />
+    <br />
+    <a href={{post.slug}}>Saiba Mais...</a>
+</div>
+{% endfor %}
+
+{% endblock %}
+
