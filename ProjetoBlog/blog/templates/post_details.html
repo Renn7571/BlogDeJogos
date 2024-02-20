@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<div>
+    <h1>{{post.titulo}}</h1>
+    <h4>Autor: {{post.autor}}</h4>
+    <h5>{{post.publicado_em}}</h5>
+    <h4>{{post.resumo}}</h4>
+    <img width="550" height="325" src={{post.img_url}}>
+    <p>{{post.conteudo}}</p>
+
+    <hr>
+
+    <h2>Comentários</h2>
+
+    {% for comentario in post.comentarios.all %}
+
+    <p><strong>{{comentario.nome}}</strong></p>
+    <small>{{comentario.publicado_em}}</small>
+
+    <p>{{comentario.conteudo}}</p>
+
+    {% empty %}
+
+    <p>Nenhum comentário ainda</p>
+
+    {% endfor %}
+
+    <hr>
+
+    <h2>Adicionar comentário</h2>
+
+    <form method="post" action=".">
+        {% csrf_token %}
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">
+        <br />
+        <br />
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+        <br />
+        <br />
+        <label for="conteudo">Conteudo: </label>
+        <textarea name="conteudo" id="conteudo"></textarea>
+        <br />
+        <br />
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+{% endblock %}
+

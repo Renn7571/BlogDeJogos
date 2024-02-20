@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px 20px;
+}
+
+.card {
+    background-image: url(https://p2.bahamut.com.tw/B/2KU/06/13063e2fba0488c30190f7696c1bslu5.JPG);
+    background-color: rgb(88, 18, 134);
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(48, 0, 37);
+    color: white;
+}
+
+.teste {
+    display: flex;
+    object-fit: contain;
+}
+
+.teste:hover {
+    gap: 50px;
+}
+
+/* .card > img {
+    object-fit: fill;
+} */
+
+.card:hover {
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.226);
+    color: black;
+    transform: scale(1.2);
+    overflow: hidden;
+    z-index: 1;
+}

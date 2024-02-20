@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: gray;
+            padding: 5px 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 10px 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/">
+            <h1>Bloguezin dos Cria</h1>
+            </a>
+            <nav>
+                <a href="">login</a>
+                <a href="">sobre</a>
+            </nav>
+    </header>
+
+    <section>
+        <div class="card">
+            <h2>Primeiro Post</h2>
+            <small>publicado em 25-01-24</small>
+            <small><strong>Autor: Renn</strong></small>
+            <p>Esse é um pequeno resumo do texto que a pessoa irá ler nesse post.</p>
+            <a href="">leia mais...</a>
+        </div>
+        <div class="card">
+            <h2>Segundo Post</h2>
+            <small>publicado em 25-01-24</small>
+            <small><strong>Autor: Renn</strong></small>
+            <p>Esse é um pequeno resumo do texto que a pessoa irá ler nesse post.</p>
+            <a href="">leia mais...</a>
+        </div>
+        <div class="card">
+            <h2>Terceiro Post</h2>
+            <small>publicado em 25-01-24</small>
+            <small><strong>Autor: Renn</strong></small>
+            <p>Esse é um pequeno resumo do texto que a pessoa irá ler nesse post.</p>
+            <a href="">leia mais...</a>
+        </div>
+    </section>
+</body>
+</html>
+
+
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(207, 207, 207);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: gray;
+            padding: 5px 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 10px 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <h1>Bloguezin dos Cria</h1>
+        </a>
+        <nav>
+            <a href="">login</a>
+            <a href="">sobre</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="card">
+            <h2>Primeiro Post</h2>
+            <small>publicado em 25-01-24</small>
+            <small><strong>Autor: Renn</strong></small>
+            <p><strong>Esse é um pequeno resumo do texto que a pessoa irá ler nesse post.</strong></p>
+            <p>Esse é o texto completo do post. Esse é um texto bem mais longo que o anterior pois contem todo o
+                conteúdo. Esse é o texto completo do post. Esse é um texto bem mais longo que o anterior pois contem
+                todo o conteúdo. Esse é o texto completo do post. Esse é um texto bem mais longo que o anterior pois
+                contem todo o conteúdo. Esse é o texto completo do post. Esse é um texto bem mais longo que o anterior
+                pois contem todo o conteúdo. Esse é o texto completo do post. Esse é um texto bem mais longo que o
+                anterior pois contem todo o conteúdo. Esse é o texto completo do post. Esse é um texto bem mais longo
+                que o anterior pois contem todo o conteúdo. Esse é o texto completo do post. Esse é um texto bem mais
+                longo que o anterior pois contem todo o conteúdo. Esse é o texto completo do post. Esse é um texto bem
+                mais longo que o anterior pois contem todo o conteúdo. Esse é o texto completo do post. Esse é um texto
+                bem mais longo que o anterior pois contem todo o conteúdo. Esse é o texto completo do post. Esse é um
+                texto bem mais longo que o anterior pois contem todo o conteúdo. Esse é o texto completo do post. Esse é
+                um texto bem mais longo que o anterior pois contem todo o conteúdo. Esse é o texto completo do post.
+                Esse é um texto bem mais longo que o anterior pois contem todo o conteúdo. Esse é o texto completo do
+                post. Esse é um texto bem mais longo que o anterior pois contem todo o conteúdo. Esse é o texto completo
+                do post. Esse é um texto bem mais longo que o anterior pois contem todo o conteúdo. Esse é o texto
+                completo do post. Esse é um texto bem mais longo que o anterior pois contem todo o conteúdo. Esse é o
+                texto completo do post. Esse é um texto bem mais longo que o anterior pois contem todo o conteúdo. Esse
+                é o texto completo do post. Esse é um texto bem mais longo que o anterior pois contem todo o conteúdo.
+                Esse é o texto completo do post. Esse é um texto bem mais longo que o anterior pois contem todo o
+                conteúdo. Esse é o texto completo do post. Esse é um texto bem mais longo que o anterior pois contem
+                todo o conteúdo. Esse é o texto completo do post. Esse é um texto bem mais longo que o anterior pois
+                contem todo o conteúdo. Esse é o texto completo do post. Esse é um texto bem mais longo que o anterior
+                pois contem todo o conteúdo. Esse é o texto completo do post. Esse é um texto bem mais longo que o
+                anterior pois contem todo o conteúdo. Esse é o texto completo do post. Esse é um texto bem mais longo
+                que o anterior pois contem todo o conteúdo. Esse é o texto completo do post. Esse é um texto bem mais
+                longo que o anterior pois contem todo o conteúdo. Esse é o texto completo do post. Esse é um texto bem
+                mais longo que o anterior pois contem todo o conteúdo. Esse é o texto completo do post. Esse é um texto
+                bem mais longo que o anterior pois contem todo o conteúdo. Esse é o texto completo do post. Esse é um
+                texto bem mais longo que o anterior pois contem todo o conteúdo. Esse é o texto completo do post. Esse é
+                um texto bem mais longo que o anterior pois contem todo o conteúdo. Esse é o texto completo do post.
+                Esse é um texto bem mais longo que o anterior pois contem todo o conteúdo. Esse é o texto completo do
+                post. Esse é um texto bem mais longo que o anterior pois contem todo o conteúdo. Esse é o texto completo
+                do post. Esse é um texto bem mais longo que o anterior pois contem todo o conteúdo. Esse é o texto
+                completo do post. Esse é um texto bem mais longo que o anterior pois contem todo o conteúdo. </p>
+        </div>
+
+    </section>
+</body>
+
+</html>
+ {% endcomment %}
+
+
+{% comment %} </html> {% endcomment %}
