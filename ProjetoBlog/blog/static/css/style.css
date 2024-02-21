@@ -1,0 +1,60 @@
+body {
+    background-color: #343a40ed;
+}
+
+header {
+    width: 100%;
+    background-color: #343a40;
+    padding: 5px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    
+}
+
+.card {
+    --bs-card-bg: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgb(48, 0, 37);
+    color: white;
+    transition: 1s;
+}
+
+.card > .titulo {
+    font-size: 32px;
+}
+
+.teste {
+    display: flex;
+    gap: 5px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    margin: 20px;
+}
+
+.card:hover {
+    width: 560px;
+}
+
+.teste:has(.card:hover) :not(:hover) {
+    transform: scale(0.9);
+    opacity: 0.6;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
