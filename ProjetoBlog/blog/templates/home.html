@@ -1,20 +1,16 @@
 {% extends 'base.html' %}
 
 {% block conteudo %}
-
-{%for post in posts %} 
-<a href={{post.slug}}>
-    <div class="card" style="background-image:url({{post.img_url}})">  
-        <h2 class="titulo">{{ post.titulo }}</h2>
-        {% comment %} <small>Publicado em: {{post.publicado_em}}</small> {% endcomment %}
-        {% comment %} <p>
-            <small><strong>Autor: {{post.autor}}</strong></small>
-        </p> {% endcomment %}
-        {% comment %} <p><strong>{{post.resumo}}</strong></p> {% endcomment %}
-        {% comment %} <img src={{post.img_url}}> {% endcomment %}
-    </div>
-</a>  
-{% endfor %}
-
+        {%for post in posts %}
+            <a 
+                href={{post.slug}} 
+                class="card" 
+                style="background-image:url('{{post.img_url}}')"
+                >
+                <div>
+                    <h2 class="titulo">{{ post.titulo }}</h2>
+                </div>
+            </a>
+        {% endfor %}
+    
 {% endblock %}
-
